@@ -16,3 +16,19 @@ console.log(mynewDate.toLocaleDateString());//op:14/01/2023
 
 let mynewDate2 = new Date("01-14-2023")
 console.log(mynewDate2.toLocaleString());//op:14/01/2023, 00:00:00
+// let mycreatedDate = new Date("01-14-2023");
+// let mytimeStamp = Date.now()
+
+// console.log(mytimeStamp)//1719677112577-->time in ms since 1 january 1970
+// console.log(mycreatedDate.getTime());//1673634600000-->time since 1 jan1970 to specified date
+// console.log(Math.floor(Date.now()/1000));
+
+let newDate =new Date()
+console.log(newDate);//op:2024-06-29
+console.log(newDate.getMonth());//op:5(o-index months)
+console.log(newDate.getDay());//op:6
+
+//if we want to  customize the format
+newDate.toLocaleString('default',{weekday:"long"})
+
+
