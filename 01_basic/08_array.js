@@ -1,37 +1,37 @@
-// //Dates
 
-// let myDate = new Date()
-// console.log(myDate);//2024-06-29T14:11:03.461Z
-// console.log(myDate.toString());//op:Sat Jun 29 2024 19:43:02 GMT+0530 (India Standard Time)
-// console.log(myDate.toDateString());//op:Sat Jun 29 2024
-// console.log(myDate.toLocaleDateString());//op:29/06/2024
-// console.log(typeof myDate);//object<--interview question
+//array
 
-// //Methods to declare date
-// let mycreatedDate = new Date(2023,0,23);//Month starts with 0-index in js
-// console.log(mycreatedDate.toDateString());//op:Mon Jan 23 2023
+const myArr=[0,1,2,3,5,"Anjali"]
+console.log(myArr[5]);//op:Anjali
+//array in js are resizable,collection of similar or diiferent datatypes
 
-// let mynewDate = new Date("2023-01-14")
-// console.log(mynewDate.toLocaleDateString());//op:14/01/2023
+const myArr2 =new Array(1,23,4,5)
+console.log(myArr2[2]);//4
 
-// let mynewDate2 = new Date("01-14-2023")
+//ARRAY METHODS
+myArr.push(6)
+myArr.push(7)
+console.log(myArr);//op:[ 0, 1, 2, 3, 5, 'Anjali', 6, 7 ]
 
+myArr.pop()
+console.log(myArr);//[ 0, 1, 2, 3, 5, 'Anjali', 6 ]
 
-// console.log(mynewDate2.toLocaleString());//op:14/01/2023, 00:00:00
-// let mycreatedDate = new Date("01-14-2023");
-// let mytimeStamp = Date.now()
+myArr.unshift(9)//adds 9 at starting of the array
+console.log(myArr)//op:[ 9, 0, 1, 2, 3, 5, 'Anjali', 6 ]
 
-// console.log(mytimeStamp)//1719677112577-->time in ms since 1 january 1970
-// console.log(mycreatedDate.getTime());//1673634600000-->time since 1 jan1970 to specified date
-// console.log(Math.floor(Date.now()/1000));
+myArr.shift();//removes the first element in the list
+console.log(myArr)//op:[ 0, 1, 2, 3, 5, 'Anjali', 6 ]
 
-let newDate =new Date()
-console.log(newDate);//op:2024-06-29
-console.log(newDate.getMonth());//op:5(o-index months)
-console.log(newDate.getDay());//op:6
-
-//if we want to  customize the format
-newDate.toLocaleString('default',{weekday:"long"})
+console.log(myArr.includes(9));//-1 because it doesnot exist in array
+console.log(myArr.indexOf(3));//3
 
 
+//Array.join method
+const newArr =myArr.join()
+console.log(myArr);//op:[ 0, 1, 2, 3, 5, 'Anjali', 6 ]
+console.log(newArr);//op:0,1,2,3,5,Anjali,6
+console.log(typeof myArr);//op:object
+console.log(typeof newArr);//op:string
+
+//SLICE AND SPLICE
 
