@@ -78,3 +78,20 @@ console.log(undefined<0);//false
 
 //=== does strict check both value and datatype
 console.log(1==="1");//false datatype is different
+
+//datatypes are of two types primitive and non primitive
+// Primitive(call by value use hota h):7 types:String,Number,Boolean,null,undefined,Symbol,BigInt
+// Non Premitive(reference use hota h) :array ,object,function
+//Array
+const heros=["batman","spiderman","hulk","captainmarvel","drstrange"]
+//Object:anyting within cyrly braces
+myobj={
+    name:"Anjali",
+    age:15,
+}
+//Function
+
+const myFun=function()
+{
+    console.log("hello");
+}
