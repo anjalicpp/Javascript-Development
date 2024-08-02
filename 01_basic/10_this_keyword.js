@@ -15,4 +15,6 @@ When there is nothing in code then if we do
     console.log(this);
 output:{}  <-----if we are in node environment
 if in browser output is: window object 
-reason:
+reason:Earlier js engine were only associated with browsers and now we can have standalone engines.
+
+    --------------
