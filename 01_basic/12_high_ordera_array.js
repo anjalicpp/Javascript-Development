@@ -25,5 +25,11 @@ map.set('IN',"India");
     'Fr',"France"
 }
 
+//Print map element
+for(const [key,value] of map)
+  {
+    console.log(key,':-',value);
+  }
+
 
 
