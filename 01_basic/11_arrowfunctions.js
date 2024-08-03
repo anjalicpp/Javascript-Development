@@ -1,4 +1,4 @@
-
+Important concepts Below:IIfe,Javascript Execution Context,Nullish Coalishing operator(??).
 const addTwo = (num1,num2)=>{
   return num1+num2;
 }
@@ -94,6 +94,23 @@ if(Object.key(emptyObj).length===0)
   {
     console.log("Object is empty");
   }
+
+
+---------------------------------------------------
+  //Nullish Coalescing Operator(??):null undefined
+
+  let val1;
+//val1 = 5??10
+console.log(val1)//op:5
+
+//val1 = null??10//op;10
+//This is used while getting response from database.this operator is made for null and undefined case handling.
+
+//val1 = undefined ?? 15  //op:15
+//val1=null??10??20  //op:10
+Ternary Operator:condition?true:false;
+
+
 
 
 
