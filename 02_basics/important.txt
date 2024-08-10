@@ -1,0 +1,2 @@
+DOM.js ===>element selector 
+HTML Collection vs Array and manipulating HTml collectio in js
