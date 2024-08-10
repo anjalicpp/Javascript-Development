@@ -81,3 +81,51 @@ const myarr =[1,2,3]
 undefined
 myarr
 (3) [1, 2, 3]0: 11: 22: 3length: 3[[Prototype]]: Array(0) */
+
+
+//now refer to example :
+/*const myH1 = document.querySelectorAll('h1')
+undefined
+myH1
+NodeList [h1#tittle.heading]
+myH1.style.color = 'green'
+VM2141:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:18<---Error because its not an array
+
+    myH1[0].style.color = 'green'
+'green'
+
+now we can color all the list item using forEach:
+tempdoc.forEach(function (l){
+    l.style.backgroundColor = 'green'
+})
+*/
+
+//Converting HTML Collections into array
+/*
+
+const TempClassList = document.getElementsByClassName('list-item')
+undefined
+TempClassList
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+TempClassList.forEach(function(li)){
+    cosole.log(li);
+}
+because it is not an array 
+Lets convert it into an array
+TempClassList
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+Array.from(TempClassList)
+(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+})
+
+//changed list to orange color
+const myconvertedArray = Array.from(TempClassList)
+undefined
+myconvertedArray.forEach(function(li) {
+    li.style.color = 'orange'
+})
+
+Conclusion:We can use Html collection in manipulation by changing into array and then using for each loop
+*/
+
