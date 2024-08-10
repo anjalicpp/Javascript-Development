@@ -72,3 +72,12 @@ document.querySelectorAll('li')
 NodeList(3) [li, li, li]
 */
 //imp: Nodelist,HTML collection  is not same as array as arraay has map method but these dont have.
+/*
+const tempdoc = document.querySelectorAll('li')
+undefined
+tempdoc
+NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeList
+const myarr =[1,2,3]
+undefined
+myarr
+(3) [1, 2, 3]0: 11: 22: 3length: 3[[Prototype]]: Array(0) */
